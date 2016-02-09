@@ -21,7 +21,9 @@ class SMH_WPCLI_Clean_MultisiteDB extends WP_CLI_Command {
 
 	}
 
-	/*
+	/**
+	 * Delete orphaned tables
+	 *
 	 * @synopsis [--force]
 	 */
 	function delete($args, $assoc_args) {
