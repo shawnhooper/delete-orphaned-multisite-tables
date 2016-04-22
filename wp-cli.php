@@ -61,7 +61,7 @@ class SMH_WPCLI_Clean_MultisiteDB extends WP_CLI_Command {
 	private function get_orphan_tables() {
 		global $wpdb;
 
-		$orphanTables = [];
+		$orphanTables = array();
 		$allTables = $wpdb->get_col("SHOW TABLES");
 		$sites = $wpdb->get_col("SELECT blog_id FROM " . $wpdb->prefix . "blogs");
 
